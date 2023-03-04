@@ -42,8 +42,8 @@ export default function Dashboard() {
     //     }
     // ]
     return (
-        <div class="flex flex-col pt-20 p-8 mx-auto my-auto">
-            <div class="flex space-x-5">
+        <div class="flex flex-col pt-20 p-8 mx-auto my-auto ">
+            <div class="flex space-x-5 justify-center">
                 <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-10 h-10 justify-evenly"></img>
                 <div class="flex-col">
                     <p class="text-2xl font-bold font-serif">Welcome Harsh, </p>
@@ -65,7 +65,7 @@ export default function Dashboard() {
                     </div>
                 </ReactCardFlip>
             </div>
-            <div>
+            <div class="justify-center">
                 <h3 class="text-3xl font-bold font-serif">Things Near You</h3>
             </div>
             <div class="">
