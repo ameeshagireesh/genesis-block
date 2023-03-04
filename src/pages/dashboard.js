@@ -1,7 +1,15 @@
 import Category from "@/components/categoryPill"
 import Image from "next/image"
+import ReactCardFlip from "react-card-flip"
+import { useState } from "react"
 
 export default function Dashboard() {
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleClick = () => {
+        setIsFlipped(!isFlipped);
+    }
+
     const categories = [
         {
             categoryName: 'food&drink',
@@ -43,11 +51,19 @@ export default function Dashboard() {
                 </div>
             </div>
             <div class="pt-10 pb-10">
-                <Image class="mx-auto my-ato"
-                    src="/event-card.svg"
-                    width={300}
-                    height={500}
-                ></Image>
+                <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+                    <div onClick={handleClick}>
+
+                    <Image class="mx-auto my-ato"
+                        src="/event-card.svg"
+                        width={300}
+                        height={500}
+                    ></Image>
+                    </div>
+                    <div onClick={handleClick}>
+                        <p>hello there</p>
+                    </div>
+                </ReactCardFlip>
             </div>
             <div>
                 <h3 class="text-3xl font-bold font-serif">Things Near You</h3>
