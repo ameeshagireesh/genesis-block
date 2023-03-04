@@ -9,7 +9,7 @@ const oauth2Client = new google.auth.OAuth2(
 export default async function handler(req, res) {
   const url = oauth2Client.generateAuthUrl({
     access_type: 'offline',
-    scope: ['https://www.googleapis.com/auth/userinfo.email']
+    scope: ['https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/userinfo.profile']
   });
 
   res.status(200).json({ url });

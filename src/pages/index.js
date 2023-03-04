@@ -1,16 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Onboarding from '../components/Onboarding/onboarding';
 
-const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({authUrl}) {
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Onboarding authUrl={authUrl} />
+    {/* If cookie is present then show dashboard if not present then show OnBoarding screen */}
     </>
   )
+}
+
+// serversideprops to get cookie and check
+export async function getServerSideProps(context) {
+  // Check cookie if cookie is present then dont do the next steps
+  const response = await fetch('http://localhost:3000/api/auth/google');
+  const { url } = await response.json();
+  return {
+    props: { authUrl: url }, // will be passed to the page component as props
+  }
+  // if cookie 
 }
