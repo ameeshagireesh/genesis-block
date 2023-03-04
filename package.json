@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@elastic/elasticsearch": "^8.6.0",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "googleapis": "^112.0.0",
