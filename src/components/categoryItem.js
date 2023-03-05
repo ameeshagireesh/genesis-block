@@ -1,20 +1,19 @@
-const Category = ({ itemLogo, itemName, itemRating, deliveryTime, categoryName }) => {
+const Category = ({ photoUrl, name, description, itemRating, category }) => {
     return (
         <div class="flex">
-            <img></img>
+            <img src={photoUrl}></img>
             <div class="flex-col">
-                <p>{itemName}</p>
+                <p>{name}</p>
                 <div class="flex">
-                    <Image></Image>
+                    <p>{description}</p>
                     <p>{itemRating}</p>
-                    <p>{deliveryTime}</p>
                 </div>
-                <p>{categoryName}</p>
+                <p>{category}</p>
                 <div class="flex">
                     <p>
                         Place Order
                     </p>
-                    <Image></Image>
+                    {/* <Image></Image> */}
                 </div>
             </div>
         </div>
