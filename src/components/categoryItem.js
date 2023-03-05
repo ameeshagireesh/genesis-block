@@ -1,4 +1,4 @@
-const Category = ({ photoUrl, name, description, itemRating, category }) => {
+const CategoryItem = ({ photoUrl, name, description, itemRating, category }) => {
     return (
         <div class="flex">
             <img src={photoUrl}></img>
@@ -20,4 +20,4 @@ const Category = ({ photoUrl, name, description, itemRating, category }) => {
     )
 }
 
-export default Category;
+export default CategoryItem;

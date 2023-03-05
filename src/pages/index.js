@@ -5,6 +5,7 @@ import ReactCardFlip from "react-card-flip"
 import { useState } from "react"
 import { getAllAttraction } from "@/api/requests"
 import Backcard from "./backcard"
+import CategoryItem from "@/components/categoryItem"
 
 export default function Home() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -67,8 +68,9 @@ export default function Home() {
 
               {categories.map((category, index) => (
                 <Category key={index} {...category} />
-
-              ))}
+                
+                ))}
+                <CategoryItem />
             </div>
           </div>
         </div>
