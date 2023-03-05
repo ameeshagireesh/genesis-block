@@ -1,14 +1,15 @@
-const CategoryItem = ({ photoUrl, name, description, itemRating, category }) => {
+export default function CategoryItem () {
     return (
+        <>
         <div className="flex border-2">
-            <img src={photoUrl}></img>
+            <img src="https://www.shutterstock.com/image-photo/bangkok-thailand-february-6-2019-260nw-1308118378.jpg"></img>
             <div className="flex-col">
-                <p>{name}</p>
+                <p>KFC</p>
                 <div className="flex">
-                    <p>{description}</p>
-                    <p>{itemRating}</p>
+                    <p>KFC Yummy</p>
+                    <p>5</p>
                 </div>
-                <p>{category}</p>
+                <p>food and drink</p>
                 <div className="flex">
                     <p>
                         Place Order
@@ -17,7 +18,6 @@ const CategoryItem = ({ photoUrl, name, description, itemRating, category }) => 
                 </div>
             </div>
         </div>
+        </>
     )
 }
-
-export default CategoryItem;

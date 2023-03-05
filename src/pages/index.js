@@ -72,6 +72,7 @@ export default function Home({ attractions }) {
               {attractions.map((attraction, index) => {
                 <CategoryItem category={attraction.category} description={attraction.description} name={attraction.name} photoUrl={attraction.photoUrl} key={index} />
               })}
+              {/* <CategoryItem /> */}
             </div>
           </div>
         </div>

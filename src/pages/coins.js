@@ -18,7 +18,7 @@ export default function Coins() {
             }
         }).then(async (result) => {
             if (result.isConfirmed) {
-                const res = await addToken();
+                // const res = await addToken();
 
             }
         })
