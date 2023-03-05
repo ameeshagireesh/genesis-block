@@ -14,15 +14,15 @@ export default function QuanityCounter() {
     }
 
     return (
-        <div class="flex border-2 rounded">
-            <div class="p-5">
+        <div className="flex border-2 rounded">
+            <div className="p-5">
                 <button onClick={decrementQuantity}
                 > - </button>
             </div>
-            <div class="p-5">
+            <div className="p-5">
                 <span>{quantity}</span>
             </div>
-            <div class="p-5">
+            <div className="p-5">
 
                 <button onClick={incrementQuantity}> + </button>
             </div>
