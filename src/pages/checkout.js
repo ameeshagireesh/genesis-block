@@ -1,5 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 import CheckoutItem from '@/components/checkoutItem'
+import Navbar from '@/components/navbar'
 
 export default function Checkout() {
     return (
@@ -58,7 +59,8 @@ export default function Checkout() {
                 <p class="mr-auto">Item Total</p>
                 <p> 190 Tokens</p>
             </div>
-            <hr />
+            <hr class="pb-5"/>
+            <Navbar />
         </div>
     )
 }

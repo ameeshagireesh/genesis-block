@@ -43,19 +43,19 @@ export default function Dashboard() {
     //     }
     // ]
     return (
-        <div class="flex flex-col pt-20 p-5 mx-auto my-auto ">
+        <div class="flex flex-col pt-20 p-5 mx-auto my-auto  ">
             <div class="flex space-x-5 justify-center">
-                <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-10 h-10 justify-evenly"></img>
+                <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-10 h-10 mx-auto my-auto "></img>
                 <div class="flex-col">
                     <p class="text-2xl font-bold font-serif">Welcome Harsh, </p>
                     <p class="text-gray-400">Hope you're excited to attend the event!</p>
                 </div>
             </div>
-            <div class="pt-10 pb-10 ">
+            <div class="pt-10 pb-10 w-full">
                 <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                     <div onClick={handleClick}>
 
-                    <Image class="mx-auto my-ato"
+                    <Image class="mx-auto my-auto"
                         src="/event-card.svg"
                         width={500}
                         height={500}
