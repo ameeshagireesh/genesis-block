@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <div class="flex flex-col pt-20 p-5 mx-auto my-auto  ">
-        <div class="flex space-x-5 justify-center">
+        <div class="flex space-x-5 justify-center mx-5">
           <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-10 h-10 mx-auto my-auto "></img>
           <div class="flex-col">
             <p class="text-2xl font-bold font-serif">Welcome Harsh, </p>
@@ -60,18 +60,18 @@ export default function Home() {
               <Backcard />
             </div>
           </ReactCardFlip>
-          <div class="justify-center pt-5">
+          <div class="justify-center pt-5 mx-5">
             <h3 class="text-xl font-bold font-serif ">Things Near You</h3>
           </div>
-          <div class="">
+          <div class="mx-5 my-5">
             <div class="flex space-x-3 pt-10 scroll-pl-6 snap-x">
 
               {categories.map((category, index) => (
                 <Category key={index} {...category} />
                 
                 ))}
-                <CategoryItem />
             </div>
+            {/* <CategoryItem /> */}
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default function Home() {
   )
 }
 
-export async function getServerSideProps(context) {
-  const res = await getAllAttraction()
-  return { props: { attractions: res.data } }
-}
+// export async function getServerSideProps(context) {
+//   const res = await getAllAttraction()
+//   return { props: { attractions: res.data } }
+// }

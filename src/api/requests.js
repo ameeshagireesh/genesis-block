@@ -20,3 +20,8 @@ export const getAllAttraction = async () =>{
     const res = await API.get('/api/attractions/')
     return res.data;
 }
+
+export const addToken = async () => {
+    const res = await API.post('/api/transaction/addToken', {receiverId, amount})
+    return res.data;
+}
