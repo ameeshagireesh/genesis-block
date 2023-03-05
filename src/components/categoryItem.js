@@ -1,6 +1,6 @@
 const CategoryItem = ({ photoUrl, name, description, itemRating, category }) => {
     return (
-        <div className="flex">
+        <div className="flex border-2">
             <img src={photoUrl}></img>
             <div className="flex-col">
                 <p>{name}</p>
