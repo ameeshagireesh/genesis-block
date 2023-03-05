@@ -40,9 +40,9 @@ export default function Home() {
     <>
       <div class="flex flex-col pt-20 p-5 mx-auto my-auto  ">
         <div class="flex space-x-5 justify-center mx-5">
-          <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-10 h-10 mx-auto my-auto "></img>
+          <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-12 h-12 mx-auto my-auto "></img>
           <div class="flex-col">
-            <p class="text-2xl font-bold font-serif">Welcome Harsh, </p>
+            <p class="text-xl font-bold font-serif">Welcome Harsh, </p>
             <p class="text-gray-400">Hope you're excited to attend the event!</p>
           </div>
         </div>
