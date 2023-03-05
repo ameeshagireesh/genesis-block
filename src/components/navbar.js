@@ -1,6 +1,4 @@
-import { HomeIcon } from '@heroicons/react/24/outline'
-import { CurrencyRupeeIcon } from '@heroicons/react/24/outline'
-import { UserIcon } from '@heroicons/react/24/outline'
+import { HomeIcon, UserIcon, CurrencyRupeeIcon, ShoppingBagIcon} from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
 export default function Navbar() {
@@ -20,6 +18,14 @@ export default function Navbar() {
                     <CurrencyRupeeIcon class="w-6 h-6 ml-2" />
                     <p>
                         COINS
+                    </p>
+                </Link>
+            </div>
+            <div class="flex-col">
+                <Link href="/checkout">
+                    < ShoppingBagIcon class="w-6 h-6 ml-4" />
+                    <p>
+                        BASKET
                     </p>
                 </Link>
             </div>

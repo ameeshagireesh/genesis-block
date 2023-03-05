@@ -2,6 +2,7 @@ import Category from "@/components/categoryPill"
 import Image from "next/image"
 import ReactCardFlip from "react-card-flip"
 import { useState } from "react"
+import Backcard from "./backcard"
 
 export default function Dashboard() {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -50,22 +51,21 @@ export default function Dashboard() {
                     <p class="text-gray-400">Hope you're excited to attend the event!</p>
                 </div>
             </div>
-            <div class="pt-10 pb-10">
+            <div class="pt-10 pb-10 ">
                 <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                     <div onClick={handleClick}>
 
                     <Image class="mx-auto my-ato"
                         src="/event-card.svg"
-                        width={300}
+                        width={500}
                         height={500}
                     ></Image>
                     </div>
                     <div onClick={handleClick}>
-                        <p>hello there</p>
+                        <Backcard />
                     </div>
                 </ReactCardFlip>
-            </div>
-            <div class="justify-center">
+            <div class="justify-center pt-5">
                 <h3 class="text-3xl font-bold font-serif">Things Near You</h3>
             </div>
             <div class="">
@@ -76,6 +76,7 @@ export default function Dashboard() {
 
                     ))}
                 </div>
+            </div>
             </div>
         </div>
     )
