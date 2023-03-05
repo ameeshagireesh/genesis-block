@@ -3,23 +3,23 @@ import Image from "next/image";
 
 export default function Coins() {
     return (
-        <div class="p-3">
+        <div class="p-5">
             <Image src='/wallet.svg' class="p-3"
                 width={100}
                 height={100}
             />
             <div class="flex">
                 <div class="flex-col">
-                    <p> Your Points</p>
+                    <p class="text-gray-400"> Your Points</p>
                     <h4 class="text-xl font-bold font-serif">20,000</h4>
                 </div>
-                <div class=""> 
-                    <button >View Transaction History</button>
+                <div class="text-gray-400 ml-auto"> 
+                    <button class="underline">View Transaction History</button>
                 </div>
             </div>
             <div class="flex-col pt-5 space-y-3 pb-5">
                 <h3 class="text-xl font-bold font-serif">Wanna add points?</h3>
-                <p>Upgrade your fun factor by topping up your points!</p>
+                <p class="text-gray-400">Upgrade your fun factor by topping up your points!</p>
                 <div class="flex bg-zinc-800 hover:bg-zinc-900 rounded border-stone-500 border-2">
                     <Image src="/gold.svg" class="p-2"
                     width={100}

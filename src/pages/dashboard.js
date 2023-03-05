@@ -42,7 +42,7 @@ export default function Dashboard() {
     //     }
     // ]
     return (
-        <div class="flex flex-col pt-20 p-8 mx-auto my-auto ">
+        <div class="flex flex-col pt-20 p-5 mx-auto my-auto ">
             <div class="flex space-x-5 justify-center">
                 <img src="https://img.freepik.com/free-icon/user_318-174218.jpg" class="w-10 h-10 justify-evenly"></img>
                 <div class="flex-col">
