@@ -1,8 +1,7 @@
 import axios from "axios";
 
-
 export const API = axios.create({
-    baseURL:  PROCESS.ENV_REACT_APP_BASE_URL,
+    baseURL: process.env.NEXT_PUBLIC_BACKEND_BASE_URL,
     responseType: "json",
 })
 
