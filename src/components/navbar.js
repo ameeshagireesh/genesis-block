@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <div class="flex space-x-10 items-center justify-center">
+        <div class="flex bottom-5 space-x-10 justify-center ">
             <div class="flex-col">
                 <Link href="/">
 
