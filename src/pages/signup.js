@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { signupRequest } from '../api/requests';
+import { signupRequest, loginRequest } from '../api/requests';
 
 
 const Register = () => {
@@ -110,3 +110,9 @@ const Register = () => {
 };
 
 export default Register;
+
+
+// export async function getServerSideProps(context) {
+//     const res = await loginRequest(email)
+//     return { props: { user: res.data } }
+//   }

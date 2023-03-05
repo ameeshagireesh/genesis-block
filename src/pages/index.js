@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </ReactCardFlip>
           <div class="justify-center pt-5">
-            <h3 class="text-3xl font-bold font-serif">Things Near You</h3>
+            <h3 class="text-xl font-bold font-serif ">Things Near You</h3>
           </div>
           <div class="">
             <div class="flex space-x-3 pt-10 scroll-pl-6 snap-x">
